@@ -1,0 +1,31 @@
+modul 11 - pointer 
+
+1)
+#include <iostream>
+using namespace std;
+int main(){
+  int* i=new int;
+  cout<<"Input bilangan = "; cin>>*i;
+  *i=*i%2;
+  if(*i==0){
+    cout<<" Bilangan genap\n"<<endl;
+  } else{
+    cout<<" Bilangan ganjil\n"<<endl;
+  }
+  cout<<endl;
+  return 0;
+}
+
+2) 
+#include <iostream>
+using namespace std;
+int main(){
+  int *p;
+  p=new int;
+
+  *p=100;
+
+  cout<<"Nilai *p : "<<*p<<endl;
+  delete p;
+  return 0;
+}
